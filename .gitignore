@@ -1,0 +1,7 @@
+# PlatformIO
+.pio/
+.vscode/
+*.elf
+*.bin
+*.hex
+*.map
