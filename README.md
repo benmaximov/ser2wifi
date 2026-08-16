@@ -1,6 +1,6 @@
 # ser2wifi
 
-Serial-to-WiFi bridge on ESP32-C5 Mini. Streams UART data to a web page over WebSocket and lets you send commands back to the serial port.
+Serial-to-WiFi bridge on ESP32-C5 Zero. Streams UART data to a web page over WebSocket and lets you send commands back to the serial port.
 
 ## Hardware
 

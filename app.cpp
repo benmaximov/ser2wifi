@@ -6,7 +6,7 @@
 #include <esp_wifi.h>
 
 // --- LED ---
-#define LED_PIN   27   // WS2812 RGB LED on ESP32-C5 Mini (GPIO27)
+#define LED_PIN   27   // WS2812 RGB LED on ESP32-C5 Zero (GPIO27)
 #define NUM_LEDS  1
 Adafruit_NeoPixel led(NUM_LEDS, LED_PIN, NEO_GRB + NEO_KHZ800);
 
@@ -15,15 +15,15 @@ Adafruit_NeoPixel led(NUM_LEDS, LED_PIN, NEO_GRB + NEO_KHZ800);
 
 
 // --- Antenna switch ---
-// GPIO26 controls the onboard RF switch on ESP32-C5 Mini:
+// GPIO26 controls the onboard RF switch on ESP32-C5 Zero:
 //   HIGH = integrated PCB antenna (default)
 //   LOW  = external IPEX connector
 // NOTE: GPIO26 is a strapping pin; it is latched at reset and then freed as GPIO.
 #define ANTENNA_SEL_PIN 26
 
 // --- Serial input/output ---
-// Connect external TX to GPIO4 (UART1 RX on ESP32-C5 Mini)
-// Connect external RX to GPIO6 (UART1 TX on ESP32-C5 Mini)
+// Connect external TX to GPIO4 (UART1 RX on ESP32-C5 Zero)
+// Connect external RX to GPIO6 (UART1 TX on ESP32-C5 Zero)
 // NOTE: GPIO5 was tried but is a JTAG (MTDO) pin with input-enabled default after reset,
 //       causing unreliable TX drive. GPIO6 is a clean P2 pin with no restrictions.
 #define SERIAL_RX_PIN  4
