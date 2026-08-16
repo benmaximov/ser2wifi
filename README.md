@@ -19,7 +19,6 @@ Serial-to-WiFi bridge on ESP32-C5 Zero. Streams UART data to a web page over Web
 - Copy / Save / Clear log buttons
 - WebSocket auto-reconnect with watchdog
 - WiFi auto-reconnect, LED status indicator
-- Support for channels 1-13 (EU regulatory domain)
 
 ## Build & Flash
 
@@ -32,9 +31,9 @@ pio device monitor
 
 ## WiFi
 
-Edit SSID and password in `app.cpp`:
+Copy `credentials.h` locally and fill in your SSID and password:
 
 ```cpp
-const char* SSID     = "";
-const char* PASSWORD = "";
+const char* SSID     = "your_ssid";
+const char* PASSWORD = "your_password";
 ```
